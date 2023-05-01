@@ -1,8 +1,9 @@
 import "./menu.css";
 
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 export default function Menu() {
+    const location = useLocation();
     return (
         <div className="container">
             <header className="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
@@ -12,15 +13,14 @@ export default function Menu() {
 
                 <ul className="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
                     <li> <Link className="nav-link" to='/'>Home</Link> </li>
-
-                     
                 </ul>
                 
                 <div className="col-md-3 text-end">
-                    <button type="button" className="btn btn-primary">Cadastrar</button>
+                    {location.pathname !== '/cadastro' && (
+                        <Link to="/cadastro" className="btn btn-primary" >Cadastrar</Link>
+                )}
                 </div>
             </header>
         </div>
     )
 }
-/* TODO: esse link do cadastro so precisa ser movido para o botao de cadastrar.*/
