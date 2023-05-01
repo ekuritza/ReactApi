@@ -17,11 +17,11 @@ function Filtro({ onSeachChange, onSelectChange }) {
   }
 
   return (
-    <div className="input-group">
+    <div className="input-group mb-5">
       <input
         type="text"
         placeholder="Busque seu filme favorito"
-        className="form-control"
+        className="form-control "
         aria-label="Text input with dropdown button"
         value={seach}
         onChange={(e) => handleSearchChange(e.target.value)} 
