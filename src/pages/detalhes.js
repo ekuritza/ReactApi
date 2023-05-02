@@ -4,7 +4,7 @@ import api from "../services";
 import Titulo from "../components/Titulo";
 import Loading from "../components/Loading";
 import Button from "../components/Button";
-// import Comments from '../components/Comments';
+import Comments from '../components/Comments';
 
 
 export default function Detalhes() {
@@ -54,7 +54,7 @@ export default function Detalhes() {
           </div>
         </div>
       )}
-      {/* TODO: Adicionar comentarios */}
+      <Comments />
     </div>
   );
 }
