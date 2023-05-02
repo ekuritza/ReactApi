@@ -13,11 +13,11 @@ function Card({ poster, titulo, ano, nota, assistido, id }) {
       style={{ width: "18rem" }}
     >
       <img className="card-img-top" src={poster} alt="Card poster cap" />
-      <div className="card-body">
-        <h5 className="card-title">
+      <div className="card-body d-flex flex-column justify-content-center align-items-center">
+        <h6 className="card-title text-center">
           {titulo} - {ano}
-        </h5>
-        <p className="card-text">
+        </h6>
+        <p className="card-text text-center">
           {nota}{" "}
           <svg
             xmlns="http://www.w3.org/2000/svg"

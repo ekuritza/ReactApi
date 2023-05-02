@@ -1,0 +1,12 @@
+.custom-input-group {
+    max-width: 1290px; /* ajuste o tamanho máximo como desejado */
+  }
+  
+  .custom-form-control {
+    width: 1000px; /* ajuste a largura do input como desejado */
+  }
+  
+  .custom-form-select {
+    width: 3000%; /* ajuste a largura do select como desejado */
+  }
+  

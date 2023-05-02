@@ -4,6 +4,8 @@ import api from "../services";
 import Titulo from "../components/Titulo";
 import Loading from "../components/Loading";
 import Button from "../components/Button";
+// import Comments from '../components/Comments';
+
 
 export default function Detalhes() {
   const { movieId } = useParams();
@@ -20,7 +22,7 @@ export default function Detalhes() {
         console.log(res.data);
         setLoading(false);
       } catch (error) {
-        setError("Não foi possível encontrar os dados deste filme");
+        setError("Não foi possível encontrar os detalhes deste filme!");
         setLoading(false);
       }
     };

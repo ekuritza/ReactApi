@@ -82,7 +82,9 @@ export default function Home() {
           />
         ))
       ) : (
-        <p className="lead">Não foram encontrados resultados</p>
+        <div style={{ textAlign: "center" }}>
+          <p className="lead">Não foram encontrados resultados</p>
+        </div>
       )}
     </div>
   );
