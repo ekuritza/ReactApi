@@ -1,1 +1,1 @@
-Alunos: Eduardo Luciano Kuritza e Rafael de Angelo Oliveira.
+Alunos: Eduardo Luciano Kuritza e Rafael de Angelo de Oliveira.
